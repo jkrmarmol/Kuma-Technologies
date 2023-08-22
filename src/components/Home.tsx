@@ -13,7 +13,7 @@ function Home() {
         <div className="main-content">
           <p>
             Transforming <span>ideas</span> into digital
-            <span>success</span> stories
+            <span> success</span> stories
           </p>
           <img src={UnderLineImages} alt="" />
         </div>
