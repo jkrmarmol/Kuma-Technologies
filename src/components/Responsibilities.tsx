@@ -1,5 +1,3 @@
-import React from 'react'
-
 function Responsibilities() {
   return (
     <div className="responsibilities">

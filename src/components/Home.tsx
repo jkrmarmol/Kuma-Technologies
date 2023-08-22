@@ -1,4 +1,3 @@
-import React from 'react'
 import UnderLineImages from '../assets/images/hero-home-title-underline 2.svg'
 import HomeAnimatedImages from '../assets/images/animation_ll4zoku7 (2).gif'
 

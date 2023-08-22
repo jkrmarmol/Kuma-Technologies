@@ -1,4 +1,3 @@
-import React from 'react'
 import ArrowRightIcon from '../assets/images/icons/arrow-sm-right-svgrepo-com-project.svg'
 
 function Products() {

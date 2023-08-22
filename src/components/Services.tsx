@@ -1,4 +1,3 @@
-import React from 'react'
 import UnderLineServiceImages from '../assets/images/hero-home-title-underline 2.svg'
 import MobileIcon from '../assets/images/icons/mobile-svgrepo-com.svg'
 import OpenLineIcon from '../assets/images/icons/open-line-svgrepo-com.svg'
