@@ -61,7 +61,7 @@ body {
       top: 3800px;
     }
   }
-  
+  background-color: #ffffff;
 }
 
 .container {
@@ -172,7 +172,7 @@ body {
         button {
           cursor: pointer;
           background-color: #0000000D;
-          border-radius: 7px;
+          border-radius: 0.5rem;
           font-size: 600;
           border: none;
           padding: 3px 16px;
@@ -236,7 +236,7 @@ body {
         margin-top: 20px;
         background-image: -webkit-linear-gradient(left, $primary-colorA, $primary-colorB);
         padding: 12px 26px;
-        border-radius: 14px;
+        border-radius: 1rem;
         border: none;
         cursor: pointer;
 
@@ -276,8 +276,7 @@ body {
     grid-column: 1 / span 2;
     grid-row: 3 / span 1;
     display: flex;
-    border-radius: 32px;
-    
+    border-radius: 2rem;
 
     div {
       padding: 2.5rem;
@@ -343,7 +342,7 @@ body {
 
       .item {
         box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.18);
-        border-radius: 30px;
+        border-radius: 1rem;
         width: 310px;
         padding: 25px;
         display: flex;
@@ -520,7 +519,7 @@ body {
         background-color: transparent;
         border: 3px solid $primary-colorB;
         padding: 10px 30px;
-        border-radius: 12px;
+        border-radius: 1rem;
   
         p {
           font-weight: 600;
@@ -538,7 +537,7 @@ body {
     justify-self: center;
 
     .reserve {
-      border-radius: 20px;
+      border-radius: 1rem;
       padding: 20px;
       display: flex;
       justify-content: space-between;
@@ -573,7 +572,7 @@ body {
           background-color: #373737;
           padding: 7px 14px;
           border: none;
-          border-radius: 12px;
+          border-radius: 1rem;
           cursor: pointer;
 
           p {
@@ -861,6 +860,7 @@ body {
     .home {
       width: 90%;
       justify-content: center;
+      flex-wrap: wrap;
       
       .intro-text {
         flex-basis: 100%;
@@ -875,7 +875,6 @@ body {
         .main-content {
 
           p {
-            // font-size: 3.3rem;
             line-height: 120%;
             text-align: center;
             margin: 3rem 0px;
@@ -893,7 +892,10 @@ body {
       } 
 
       .intro-image {
-        display: none;
+        .circle {
+          width: 380px;
+          height: 380px;
+        }
       }
       
     }
@@ -906,6 +908,8 @@ body {
 
       div {
         align-items: center;
+        padding: 1.6rem;
+        flex-basis: 100%;
 
         p {
           text-align: center;

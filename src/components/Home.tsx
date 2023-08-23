@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react'
 import UnderLineImages from '../assets/images/hero-home-title-underline 2.svg'
 import { Player } from '@lottiefiles/react-lottie-player';
 import HomeImage from '../assets/images/animation_ll4zoku7.json';
@@ -7,6 +8,18 @@ function Home() {
     const link = 'https://calendly.com/kumatechnologies/introductory-call';
     window.open(link);
   }
+  const [width, setWidth] = useState<number>(window.innerWidth);
+  const mobileWidth = width < 480;
+  function handleWindowSizeChange() {
+    setWidth(window.innerWidth);
+  }
+
+  useEffect(() => {
+    window.addEventListener('resize', handleWindowSizeChange);
+    return () => {
+      window.removeEventListener('resize', handleWindowSizeChange);
+    }
+  }, []);
 
   return (
     <div className="home">
@@ -34,14 +47,13 @@ function Home() {
       </div>
       <div className="intro-image">
         <div className="circle"></div>
-        {/* <img src={HomeAnimatedImages} alt="" /> */}
         <Player
           autoplay
           loop
           src={HomeImage}
           style={{
-            height: '570px',
-            width: '570px'
+            height: mobileWidth ? '400px' : '570px',
+            width: mobileWidth ? '400px' : '570px'
           }}
         >
         </Player>

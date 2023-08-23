@@ -1,4 +1,4 @@
-import { useRef, useState, useEffect } from 'react'
+import { useRef, useState, useLayoutEffect } from 'react'
 import KTLogo from '../assets/images/kt_logo.svg'
 import ArrowIcon from '../assets/images/icons/arrow-sm-right-svgrepo-com.svg'
 import CloseMenuIcon from '../assets/images/close-svgrepo-com.svg'
@@ -44,7 +44,7 @@ function Header() {
     setPrevScrollPos(currentScrollPos);
   };
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);

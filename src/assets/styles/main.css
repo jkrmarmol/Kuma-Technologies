@@ -20,6 +20,7 @@
 body {
   overflow-x: hidden;
   position: relative;
+  background-color: #ffffff;
 }
 body .circle-elements {
   width: 1200px;
@@ -194,7 +195,7 @@ body .circle-elements .circle-6 {
 .container .headers header .reservation button {
   cursor: pointer;
   background-color: rgba(0, 0, 0, 0.0509803922);
-  border-radius: 7px;
+  border-radius: 0.5rem;
   font-size: 600;
   border: none;
   padding: 3px 16px;
@@ -245,7 +246,7 @@ body .circle-elements .circle-6 {
   margin-top: 20px;
   background-image: -webkit-linear-gradient(left, #E49729, #A11E64);
   padding: 12px 26px;
-  border-radius: 14px;
+  border-radius: 1rem;
   border: none;
   cursor: pointer;
 }
@@ -278,7 +279,7 @@ body .circle-elements .circle-6 {
   grid-column: 1/span 2;
   grid-row: 3/span 1;
   display: flex;
-  border-radius: 32px;
+  border-radius: 2rem;
 }
 .container .responsibilities div {
   padding: 2.5rem;
@@ -334,7 +335,7 @@ body .circle-elements .circle-6 {
 }
 .container .services .offer-item .item {
   box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.18);
-  border-radius: 30px;
+  border-radius: 1rem;
   width: 310px;
   padding: 25px;
   display: flex;
@@ -484,7 +485,7 @@ body .circle-elements .circle-6 {
   background-color: transparent;
   border: 3px solid #A11E64;
   padding: 10px 30px;
-  border-radius: 12px;
+  border-radius: 1rem;
 }
 .container .products .view-all button p {
   font-weight: 600;
@@ -498,7 +499,7 @@ body .circle-elements .circle-6 {
   justify-self: center;
 }
 .container .footer .reserve {
-  border-radius: 20px;
+  border-radius: 1rem;
   padding: 20px;
   display: flex;
   justify-content: space-between;
@@ -533,7 +534,7 @@ body .circle-elements .circle-6 {
   background-color: #373737;
   padding: 7px 14px;
   border: none;
-  border-radius: 12px;
+  border-radius: 1rem;
   cursor: pointer;
 }
 .container .footer .reserve .left button p {
@@ -754,6 +755,7 @@ body .circle-elements .circle-6 {
   .container .home {
     width: 90%;
     justify-content: center;
+    flex-wrap: wrap;
   }
   .container .home .intro-text {
     flex-basis: 100%;
@@ -776,8 +778,9 @@ body .circle-elements .circle-6 {
     width: 100%;
     margin: 3rem 0px;
   }
-  .container .home .intro-image {
-    display: none;
+  .container .home .intro-image .circle {
+    width: 380px;
+    height: 380px;
   }
   .container .responsibilities {
     width: 70%;
@@ -787,6 +790,8 @@ body .circle-elements .circle-6 {
   }
   .container .responsibilities div {
     align-items: center;
+    padding: 1.6rem;
+    flex-basis: 100%;
   }
   .container .responsibilities div p {
     text-align: center;
