@@ -1,8 +1,8 @@
 import { useRef, useState, useEffect } from 'react'
 import KTLogo from '../assets/images/kt_logo.svg'
 import ArrowIcon from '../assets/images/icons/arrow-sm-right-svgrepo-com.svg'
-import CloseMenuIcon from '../assets/images/icons/close-square-svgrepo-com.svg'
-import OpenMenuIcon from '../assets/images/icons/menu-dots-square-svgrepo-com.svg'
+import CloseMenuIcon from '../assets/images/close-svgrepo-com.svg'
+import OpenMenuIcon from '../assets/images/icons/menu-svgrepo-com.svg'
 
 function Header() {
 
