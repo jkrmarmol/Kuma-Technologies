@@ -125,20 +125,42 @@ body {
             list-style: none;
             display: flex;
 
-            li:first-child {
-              background-color: #0000000D;
-              border-radius: 7px;
-              font-size: 700;
-            }
-
             li {
               cursor: pointer;
               padding: 3px 16px;
               margin: 0px 10px;
 
+              a {
+                text-transform: uppercase;
+                text-decoration: none;
+                display: inline-block;
+                padding: 5px 3px;
+                position: relative;
+              }
+
+              a:hover::after {
+                width: 100%;
+                right: 0;
+              }
+
+              a::after {
+                background: none repeat scroll 0 0 transparent;
+                bottom: 0;
+                content: "";
+                display: block;
+                height: 4px;
+                border-radius: 1rem;
+                right: 0;
+                position: absolute;
+                background: linear-gradient(to left, $primary-colorB, $primary-colorA 100%);
+                transition: width .5s ease 0s, right .5s ease 0s;
+                width: 0;
+              }
+
               p {
                 font-size: 1rem;
-                font-weight: 500;
+                font-weight: 600;
+                font-family: 'Poppins';
                 color: #000000B3;
               }
             }

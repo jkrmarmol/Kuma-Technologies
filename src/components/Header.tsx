@@ -62,16 +62,16 @@ function Header() {
           <nav>
             <ul>
               <li>
-                <p>Home</p>
+                <a href="#"><p>Home</p></a>
               </li>
               <li>
-                <p>About</p>
+                <a href="#"><p>About</p></a>
               </li>
               <li>
-                <p>Team</p>
+                <a href="#"><p>Team</p></a>
               </li>
               <li>
-                <p>Contact</p>
+                <a href=""><p>Contact</p></a>
               </li>
             </ul>
           </nav>

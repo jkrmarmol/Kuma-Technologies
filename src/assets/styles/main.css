@@ -156,19 +156,39 @@ body .circle-elements .circle-6 {
   list-style: none;
   display: flex;
 }
-.container .headers header .navbar nav ul li:first-child {
-  background-color: rgba(0, 0, 0, 0.0509803922);
-  border-radius: 7px;
-  font-size: 700;
-}
 .container .headers header .navbar nav ul li {
   cursor: pointer;
   padding: 3px 16px;
   margin: 0px 10px;
 }
+.container .headers header .navbar nav ul li a {
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  padding: 5px 3px;
+  position: relative;
+}
+.container .headers header .navbar nav ul li a:hover::after {
+  width: 100%;
+  right: 0;
+}
+.container .headers header .navbar nav ul li a::after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 4px;
+  border-radius: 1rem;
+  right: 0;
+  position: absolute;
+  background: linear-gradient(to left, #A11E64, #E49729 100%);
+  transition: width 0.5s ease 0s, right 0.5s ease 0s;
+  width: 0;
+}
 .container .headers header .navbar nav ul li p {
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 600;
+  font-family: "Poppins";
   color: rgba(0, 0, 0, 0.7019607843);
 }
 .container .headers header .reservation button {
