@@ -79,6 +79,7 @@ body {
     z-index: 100;
     border-bottom: 2px solid #00000014;
     height: 10.5vh;
+    transition: top 0.3s;
 
     header {
       display: flex;
@@ -551,7 +552,7 @@ body {
           padding: 7px 14px;
           border: none;
           border-radius: 12px;
-          
+          cursor: pointer;
 
           p {
             color: #fff;

@@ -1,4 +1,4 @@
-import { useRef } from 'react'
+import { useRef, useState, useEffect } from 'react'
 import KTLogo from '../assets/images/kt_logo.svg'
 import ArrowIcon from '../assets/images/icons/arrow-sm-right-svgrepo-com.svg'
 import CloseMenuIcon from '../assets/images/icons/close-square-svgrepo-com.svg'
@@ -27,8 +27,32 @@ function Header() {
     openMenuRef && openMenuRef.current?.classList.add('openIcon');
   }
 
+  const headersRef = useRef<HTMLDivElement>(null);
+  const [prevScrollPos, setPrevScrollPos] = useState(window.scrollY);
+
+  const handleScroll = () => {
+    const currentScrollPos = window.scrollY;
+    if (prevScrollPos > currentScrollPos) {
+      if (headersRef.current) {
+        (headersRef.current as HTMLDivElement).style.top = '0px';
+      }
+    } else {
+      if (headersRef.current) {
+        (headersRef.current as HTMLDivElement).style.top = '-10.5vh';
+      }
+    }
+    setPrevScrollPos(currentScrollPos);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [prevScrollPos]);
+
   return (
-    <div className="headers">
+    <div className="headers" ref={headersRef}>
       <header>
         <div className="logo">
           <img src={KTLogo} alt="Kuma Technologies" />
