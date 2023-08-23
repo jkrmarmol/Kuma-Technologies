@@ -223,6 +223,7 @@ body .circle-elements .circle-6 {
 .container .home .intro-text {
   flex-basis: 50%;
   align-self: center;
+  z-index: 10;
 }
 .container .home .intro-text .main-content p {
   font-size: 2.9rem;
@@ -754,7 +755,6 @@ body .circle-elements .circle-6 {
     justify-content: center;
     flex-direction: row-reverse;
     flex-wrap: wrap-reverse;
-    height: 100vh;
   }
   .container .home .intro-text {
     flex-basis: 100%;
@@ -762,7 +762,7 @@ body .circle-elements .circle-6 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 20vh;
+    margin-top: -70px;
   }
   .container .home .intro-text .main-content p {
     font-size: 2rem;
@@ -771,7 +771,7 @@ body .circle-elements .circle-6 {
   .container .home .intro-text .paragraph-text {
     line-height: 180%;
     text-align: center;
-    margin: 0px 0px;
+    margin: -8px 0px;
     font-weight: 500;
   }
   .container .home .intro-text .main-content p {
