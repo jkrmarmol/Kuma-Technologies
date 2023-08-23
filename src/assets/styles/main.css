@@ -18,12 +18,11 @@
 }
 
 body {
-  overflow-x: hidden;
-  position: relative;
   background-color: #ffffff;
 }
 body .circle-elements {
-  width: 1200px;
+  overflow-x: hidden;
+  position: relative;
 }
 body .circle-elements .circle {
   border-radius: 50%;
@@ -33,6 +32,7 @@ body .circle-elements .circle {
   width: 742px;
   position: absolute;
   z-index: -12;
+  border: 1px solid red;
   left: -400px;
   top: -400px;
 }
@@ -110,6 +110,7 @@ body .circle-elements .circle-6 {
 }
 .container .headers {
   position: fixed;
+  display: block;
   left: 0;
   right: 0;
   grid-column: 1/span 2;
@@ -687,10 +688,6 @@ body .circle-elements .circle-6 {
 @media screen and (min-width: 0px) and (max-width: 480px) {
   html {
     font-size: 14px;
-    overflow-x: hidden;
-  }
-  body {
-    overflow-x: hidden;
   }
   .container .headers {
     grid-column: 1/span 2;
@@ -755,16 +752,27 @@ body .circle-elements .circle-6 {
   .container .home {
     width: 90%;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    flex-wrap: wrap-reverse;
+    height: 100vh;
   }
   .container .home .intro-text {
     flex-basis: 100%;
     width: 100%;
-    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20vh;
+  }
+  .container .home .intro-text .main-content p {
+    font-size: 2rem;
+    line-height: 1 !important;
   }
   .container .home .intro-text .paragraph-text {
-    line-height: 220%;
+    line-height: 180%;
     text-align: center;
+    margin: 0px 0px;
+    font-weight: 500;
   }
   .container .home .intro-text .main-content p {
     line-height: 120%;
@@ -775,12 +783,12 @@ body .circle-elements .circle-6 {
     display: none;
   }
   .container .home .intro-text button {
-    width: 100%;
+    width: 70%;
     margin: 3rem 0px;
   }
   .container .home .intro-image .circle {
-    width: 380px;
-    height: 380px;
+    width: 190px;
+    height: 190px;
   }
   .container .responsibilities {
     width: 70%;

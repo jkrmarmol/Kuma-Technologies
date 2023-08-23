@@ -52,8 +52,8 @@ function Home() {
           loop
           src={HomeImage}
           style={{
-            height: mobileWidth ? '400px' : '570px',
-            width: mobileWidth ? '400px' : '570px'
+            height: mobileWidth ? '250px' : '570px',
+            width: mobileWidth ? '250px' : '570px'
           }}
         >
         </Player>
