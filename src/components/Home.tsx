@@ -1,5 +1,6 @@
 import UnderLineImages from '../assets/images/hero-home-title-underline 2.svg'
-import HomeAnimatedImages from '../assets/images/animation_ll4zoku7 (2).gif'
+import { Player } from '@lottiefiles/react-lottie-player';
+import HomeImage from '../assets/images/animation_ll4zoku7.json';
 
 function Home() {
   const onClickReserve = () => {
@@ -33,7 +34,17 @@ function Home() {
       </div>
       <div className="intro-image">
         <div className="circle"></div>
-        <img src={HomeAnimatedImages} alt="" />
+        {/* <img src={HomeAnimatedImages} alt="" /> */}
+        <Player
+          autoplay
+          loop
+          src={HomeImage}
+          style={{
+            height: '570px',
+            width: '570px'
+          }}
+        >
+        </Player>
       </div>
     </div>
   )

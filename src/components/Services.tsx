@@ -11,7 +11,7 @@ function Services() {
         <div className="description">
           <p>
             We offer a variety of software development services that
-            <span>guarantees success</span>.
+            <span> guarantees success</span>.
           </p>
           <img src={UnderLineServiceImages} alt="" />
         </div>
@@ -23,12 +23,11 @@ function Services() {
             <img src={MobileIcon} alt="" />
           </div>
           <div className="title">
-            <p>Mobile Application</p>
+            <p>Mobile Development</p>
           </div>
           <div className="description">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-              eu sollicitudin est. Nunc ipsum velit,
+              Our team builds easy-to-use mobile apps that improve customer engagement and simplify their mobile experience.
             </p>
           </div>
           <div className="learn">
@@ -47,12 +46,11 @@ function Services() {
             <img src={MobileIcon} alt="" />
           </div>
           <div className="title">
-            <p>Mobile Application</p>
+            <p>Web Development</p>
           </div>
           <div className="description">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-              eu sollicitudin est. Nunc ipsum velit,
+              We create custom websites that represent your brand and connect with your online visitors effectively.
             </p>
           </div>
           <div className="learn">
@@ -71,12 +69,11 @@ function Services() {
             <img src={MobileIcon} alt="" />
           </div>
           <div className="title">
-            <p>Mobile Application</p>
+            <p>UI/UX Design</p>
           </div>
           <div className="description">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-              eu sollicitudin est. Nunc ipsum velit,
+              We design visually appealing interfaces that make it easy to navigate and enjoy a smooth digital journey.
             </p>
           </div>
           <div className="learn">
@@ -95,12 +92,11 @@ function Services() {
             <img src={MobileIcon} alt="" />
           </div>
           <div className="title">
-            <p>Mobile Application</p>
+            <p>Maintenance</p>
           </div>
           <div className="description">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-              eu sollicitudin est. Nunc ipsum velit,
+              Count on us for ongoing support to keep your online platforms secure, updated, and dependable.
             </p>
           </div>
           <div className="learn">
@@ -119,36 +115,11 @@ function Services() {
             <img src={MobileIcon} alt="" />
           </div>
           <div className="title">
-            <p>Mobile Application</p>
+            <p>Database Development</p>
           </div>
           <div className="description">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-              eu sollicitudin est. Nunc ipsum velit,
-            </p>
-          </div>
-          <div className="learn">
-            <button>
-              <p>Learn More</p>
-              <img
-                src={OpenLineIcon}
-                alt=""
-              />
-            </button>
-          </div>
-        </div>
-
-        <div className="item">
-          <div className="icon">
-            <img src={MobileIcon} alt="" />
-          </div>
-          <div className="title">
-            <p>Mobile Application</p>
-          </div>
-          <div className="description">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-              eu sollicitudin est. Nunc ipsum velit,
+              We specialize in designing and optimizing databases to manage your data efficiently and securely.
             </p>
           </div>
           <div className="learn">

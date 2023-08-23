@@ -8,7 +8,7 @@ function Products() {
         <div className="description">
           <p>
             Explore our
-            <span>recent project</span>
+            <span> recent project</span>
           </p>
           <img src="./assets/images/hero-home-title-underline 2.svg" alt="" />
         </div>
