@@ -61,10 +61,10 @@ function Footer() {
                 src={EmailIcon}
                 alt=""
               />
-              <p>inquiries@kumatechnologies.com</p>
+              <p>kumatehnologiesinc@gmail.com</p>
             </div>
             <p className="business-description">
-              Welcome to Kuma Technologies Inc. – your destination for
+              Welcome to Kuma Technologies – your destination for
               innovative IT solutions. We combine expertise and creativity to
               provide customized answers for your unique challenges. Embark on
               a journey of transformation and success with us.
@@ -88,7 +88,7 @@ function Footer() {
           <div className="hr"></div>
           <div className="bottom-container">
             <div className="left">
-              <p>@ Copyright Kuma Technologies 2023. All right reserved</p>
+              <p>@Copyright Kuma Technologies 2023. All right reserved</p>
             </div>
             <div className="right">
               <p>Privacy Policy</p>
