@@ -1,4 +1,7 @@
-import ArrowRightIcon from '../assets/images/icons/arrow-sm-right-svgrepo-com-project.svg'
+import ArrowRightIcon from '../assets/images/icons/arrow-sm-right-svgrepo-com-project.svg';
+import productItems from '../constant/productItems';
+import type { ProductInfo } from '../typings/interfaces';
+
 
 function Products() {
   return (
@@ -14,59 +17,26 @@ function Products() {
         </div>
       </div>
 
-      <div className="item">
-        <div className="left">
-          <p className="title">Lorem ipsum dolor sit amet</p>
-          <p className="description">
-            Nullam ultricies tellus ac mi dignissim, sed dignissim diam
-            ultrices. Nullam fermentum quis libero at rhoncus.
-          </p>
-          <button>
-            <p>View</p>
-            <img
-              src={ArrowRightIcon}
-              alt=""
-            />
-          </button>
-        </div>
-        <div className="right"></div>
-      </div>
-
-      <div className="item">
-        <div className="left">
-          <p className="title">Lorem ipsum dolor sit amet</p>
-          <p className="description">
-            Nullam ultricies tellus ac mi dignissim, sed dignissim diam
-            ultrices. Nullam fermentum quis libero at rhoncus.
-          </p>
-          <button>
-            <p>View</p>
-            <img
-              src={ArrowRightIcon}
-              alt=""
-            />
-          </button>
-        </div>
-        <div className="right"></div>
-      </div>
-
-      <div className="item">
-        <div className="left">
-          <p className="title">Lorem ipsum dolor sit amet</p>
-          <p className="description">
-            Nullam ultricies tellus ac mi dignissim, sed dignissim diam
-            ultrices. Nullam fermentum quis libero at rhoncus.
-          </p>
-          <button>
-            <p>View</p>
-            <img
-              src={ArrowRightIcon}
-              alt=""
-            />
-          </button>
-        </div>
-        <div className="right"></div>
-      </div>
+      {productItems.map((e: ProductInfo, index: number) => {
+        return (
+          <div className="item" key={index}>
+            <div className="left">
+              <p className="title">{e.title}</p>
+              <p className="description">{e.description}</p>
+              <button>
+                <p>View</p>
+                <img
+                  src={ArrowRightIcon}
+                  alt=""
+                />
+              </button>
+            </div>
+            <div className="right">
+              <img src={e.images} alt="" />
+            </div>
+          </div>
+        );
+      })}
 
       <div className="view-all">
         <button>

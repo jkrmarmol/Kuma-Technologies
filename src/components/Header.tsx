@@ -71,7 +71,7 @@ function Header() {
                 <a href="#"><p>Team</p></a>
               </li>
               <li>
-                <a href=""><p>Contact</p></a>
+                <a href="#"><p>Contact</p></a>
               </li>
             </ul>
           </nav>

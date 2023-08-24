@@ -1,5 +1,9 @@
 import UnderLineServiceImages from '../assets/images/hero-home-title-underline 2.svg'
 import MobileIcon from '../assets/images/icons/mobile-svgrepo-com.svg'
+import WebIcon from '../assets/images/icons/website-svgrepo-com.svg'
+import UIUXIcon from '../assets/images/icons/design-validation-svgrepo-com.svg'
+import MaintenanceIcon from '../assets/images/icons/license-maintenance-draft-svgrepo-com.svg'
+import DatabaseIcon from '../assets/images/icons/database-svgrepo-com.svg'
 import OpenLineIcon from '../assets/images/icons/open-line-svgrepo-com.svg'
 
 
@@ -10,8 +14,7 @@ function Services() {
         <p className="title">Our Services</p>
         <div className="description">
           <p>
-            We offer a variety of software development services that
-            <span> guarantees success</span>.
+            We offer a variety of software development services that <span>guarantees success</span>.
           </p>
           <img src={UnderLineServiceImages} alt="" />
         </div>
@@ -43,7 +46,7 @@ function Services() {
 
         <div className="item">
           <div className="icon">
-            <img src={MobileIcon} alt="" />
+            <img src={WebIcon} alt="" />
           </div>
           <div className="title">
             <p>Web Development</p>
@@ -66,7 +69,7 @@ function Services() {
 
         <div className="item">
           <div className="icon">
-            <img src={MobileIcon} alt="" />
+            <img src={UIUXIcon} alt="" />
           </div>
           <div className="title">
             <p>UI/UX Design</p>
@@ -89,7 +92,7 @@ function Services() {
 
         <div className="item">
           <div className="icon">
-            <img src={MobileIcon} alt="" />
+            <img src={MaintenanceIcon} alt="" />
           </div>
           <div className="title">
             <p>Maintenance</p>
@@ -112,7 +115,7 @@ function Services() {
 
         <div className="item">
           <div className="icon">
-            <img src={MobileIcon} alt="" />
+            <img src={DatabaseIcon} alt="" />
           </div>
           <div className="title">
             <p>Database Development</p>

@@ -403,6 +403,7 @@ body {
           p {
             text-align: center;
             font-size: 0.875rem;
+            font-weight: 500;
             color: #00000069;
           }
         }
@@ -490,7 +491,7 @@ body {
         padding: 1.8rem;
 
         .title {
-          font-size: 2.5rem;
+          font-size: 1.8rem;
           font-weight: 600;
           line-height: 94%;
           color: $primary-colorB;
@@ -499,7 +500,7 @@ body {
         }
 
         .description {
-          font-size: 1.125rem;
+          font-size: 1rem;
           color: #000000B3;
           margin-bottom: 2rem;
         }
@@ -530,10 +531,13 @@ body {
         flex-basis: 50%;
         border-radius: 1rem;
         border-bottom-left-radius: 0px;
-        background-image: url('../images/drawing-office-pad-site.jpg');
         height: 360px;
-        background-repeat: no-repeat;
-        background-size: cover;
+        overflow: hidden;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit:cover;
+        }
       }
     }
 
