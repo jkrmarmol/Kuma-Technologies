@@ -61,7 +61,7 @@ function Footer() {
                 src={EmailIcon}
                 alt=""
               />
-              <p>kumatehnologiesinc@gmail.com</p>
+              <p>kumatechnologiesinc@gmail.com</p>
             </div>
             <p className="business-description">
               Welcome to Kuma Technologies – your destination for
