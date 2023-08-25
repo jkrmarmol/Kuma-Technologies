@@ -15,6 +15,7 @@ body {
   background-color: #ffffff;
 
   .circle-elements {
+
     .circle {
       @include circle();
       left: -400px;
@@ -61,12 +62,9 @@ body {
 }
 
 .container {
-  overflow-x:hidden;
-  overflow-y: hidden;
-  position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 12vh minmax(100vh, max-content) minmax(30vh, max-content) minmax(100vh, max-content) minmax(100vh, max-content) minmax(100vh, max-content);
+  grid-template-rows: 12vh minmax(100vh, max-content) minmax(30vh, max-content) minmax(100vh, max-content) minmax(100vh, max-content) minmax(120vh, max-content);
 
   .headers {
     position: fixed;
