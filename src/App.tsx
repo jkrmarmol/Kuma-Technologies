@@ -1,4 +1,4 @@
-// import Circle from "./components/Circle"
+import Circle from "./components/Circle"
 import Header from "./components/Header"
 import Home from "./components/Home"
 import Responsibilities from "./components/Responsibilities"
@@ -13,7 +13,7 @@ function App() {
     <>
 
       <div className="container">
-        {/* <Circle /> */}
+        <Circle />
         <Header />
         <Home />
         <Responsibilities />
