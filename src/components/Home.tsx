@@ -5,7 +5,7 @@ import HomeImage from '../assets/images/animation_ll4zoku7.json';
 
 function Home() {
   const onClickReserve = () => {
-    const link = 'https://calendly.com/kumatechnologies/introductory-call';
+    const link = 'https://calendly.com/kumatechnologies/30min';
     window.open(link);
   }
   const [width, setWidth] = useState<number>(window.innerWidth);

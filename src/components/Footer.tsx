@@ -8,7 +8,7 @@ import EmailIcon from '../assets/images/icons/email-1572-svgrepo-com.svg'
 
 function Footer() {
   const onClickReserve = () => {
-    const link = 'https://calendly.com/kumatechnologies/introductory-call';
+    const link = 'https://calendly.com/kumatechnologies/30min';
     window.open(link);
   }
   return (

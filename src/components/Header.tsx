@@ -7,7 +7,7 @@ import OpenMenuIcon from '../assets/images/icons/menu-svgrepo-com.svg'
 function Header() {
 
   const onClickReserve = () => {
-    const link = 'https://calendly.com/kumatechnologies/introductory-call';
+    const link = 'https://calendly.com/kumatechnologies/30min';
     window.open(link);
   }
 
